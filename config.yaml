@@ -1,0 +1,13 @@
+# config.yaml
+trainer:
+  max_epochs: 50
+  devices: [0, 1] # Use first two GPUs
+model:
+  embed_dim: 256
+  num_blocks: 6
+  spatial_dim: [16, 16]
+  velocity_dim: [8, 8]
+data:
+  path: "data/plasma_master.zarr"
+  batch_size: 32
+  num_workers: 8
